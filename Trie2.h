@@ -12,15 +12,15 @@ class Trie2 {
         {
             char data;
             std::vector<Node *> childNodes;
-            bool isEndOfWord;
-            int routerNumber;
+            bool wordEnd;
+            int routerCount;
         };
 
         Node* root;
     public:
         Trie2();
         void insert(std::string address, int num);
-        bool search(std::string word);
+        bool search(std::string value);
         int findLongestMatchingPrefix(std::string address);
 };
 
